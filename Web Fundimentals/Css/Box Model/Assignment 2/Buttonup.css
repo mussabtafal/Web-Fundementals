@@ -1,0 +1,48 @@
+#button1 {
+    margin-top: 40px ;
+    margin-left: 40px;
+}
+
+#button1 input{
+    height: 30px;
+    width: 150px;
+    border: 2px solid rgb(60, 197, 167);
+    border-radius: 20px;
+    font-weight: bold;
+    color:rgb(60, 197, 167) ;
+    font-size: 18px;
+
+}
+
+#button2 {
+    margin-top: 20px ;
+    margin-left: 40px;
+    padding: 2px;
+    
+}
+
+#button2 input {
+    height: 35px;
+    width: 35px;
+    border-radius: 50px;
+    background: rgb(60, 197, 167);
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    border: rgb(60, 197, 167);
+}
+
+#button3 {
+    margin-top: 20px ;
+    margin-left: 40px;
+}
+
+#button3 input {
+    height: 35px;
+    width: 200px;
+    border: 2px solid rgb(0, 0, 0);
+    background: blue;
+    color: white;
+    font-size: 20px;
+    box-shadow: 10px 6px 6px black;
+}

@@ -1,0 +1,291 @@
+/* Site reset Mods */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0px;
+}
+
+body {
+    margin: 0px auto;
+    width: 1050px;
+    background-image: linear-gradient(to left, rgb(236, 232, 232), white);
+}
+
+
+/* Head CSS*/
+.part1 {
+    display: flex;
+    font-weight: normal;
+    height: 80px;
+}
+
+.part1 p {
+    font-size: 60px;
+    margin-top: 15px;
+}
+
+.part1 P span {
+    color: rgb(34, 101, 158);
+}
+.part1 img {
+    height: 80px;
+    margin-top: 10px;
+}
+
+.part2 {
+    background-color: rgb(50, 110, 162);
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    height: 60px;
+}
+
+.part2 p {
+    color: white;
+    font-size: 37px;
+}
+
+/* Side Adds CSS */
+
+.main {
+    display: flex;
+}
+
+aside {
+    width: 20%;
+}
+aside .ad1 {
+    background-image: linear-gradient(to right, rgb(236, 232, 232), white);
+    padding: 20px 10px 0px 5px;
+    border-bottom: 2px solid rgb(179, 179, 179);
+}
+
+.p1{
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 17px;
+    font-family: 'roboto';
+}
+
+.p2 {
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'roboto';
+}
+
+.p2 span {
+    color: rgb(54, 114, 165);
+}
+
+.p3{
+    background-color: rgb(50, 112, 166);
+    color: white;
+    box-shadow: 2px 2px black;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    height: 30px;
+    width: 200px;
+    padding-top: 8px;
+    margin-top: 15px;
+}
+
+.p4{
+    background-color: rgb(238, 137, 5);
+    color: white;
+    box-shadow: 2px 2px black;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    height: 30px;
+    width: 200px;
+    padding-top: 8px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+.p1 a{
+    color: red;
+    text-decoration: none;
+}
+
+.p3 a{
+    color: white;
+    text-decoration: none;
+}
+
+.p4 a{
+    color: white;
+    text-decoration: none;
+}
+
+.ad2 {
+    background-image: url(ad_background.png);
+    height: 280px;
+    margin-top: 30px;
+    padding-top: 25px;
+}
+
+.ad2 .P10{
+    color: white;
+    font-size: 27px;
+    text-align: center; 
+
+}
+
+.ad2 .P11 {
+    background-color: rgb(40, 198, 223);
+    color: white;
+    box-shadow: 2px 2px black;
+    border-radius: 5px;
+    font-weight: normal;
+    font-size: 17px;
+    text-decoration: none;
+    text-align: center;
+    height: 25px;
+    width: 190px;
+    padding-top: 8px;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-bottom: 25px;
+}
+
+.ad2 img {
+    height: 115px;
+    margin-left: 60px;
+}
+
+
+/* Main article CSS */
+
+article {
+    width: 80%;
+    margin-left: 50px
+}
+
+.head1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 65px;
+    border-bottom: 2px solid rgb(179, 179, 179);
+    margin-right: 10px;
+}
+
+.left {
+    display: flex;
+    align-items: flex-start;
+}
+
+.left img {
+    height: 20px;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.left p {
+    color: rgb(78, 130, 174);
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.right img {
+    height: 45px;
+    margin-right: 10px;
+}
+
+.textblock .p5 {
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.textblock .p6 {
+    color: rgb(0, 192, 223);
+    font-size: 28px;
+    font-weight: bold;
+}
+
+article .P7 {
+    color: rgb(47, 110, 163);
+    font-weight: 700;
+    font-family: 'roboto';
+    font-size: 21px;
+    margin-top: 10px;
+}
+
+article .P8 {
+    font-size: 16px;
+    font-family: 'roboto';
+    font-weight: bold;
+}
+
+article ul li,
+article ol li {
+    font-size: 16px;
+    font-family: 'roboto';
+    margin-left: 40px;
+    font-weight: bold;
+}
+
+article .response {
+    height: 110px;
+    margin-left: 210px;
+    margin-top: 20px;
+}
+
+article span {
+    color: rgb(47, 174, 192);
+}
+
+section {
+    display: flex;
+    align-items: flex-start;
+    border: 5px solid rgb(2, 133, 224);
+    margin-top: 20px;
+}
+
+section img {
+    height: 100px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+section .textblock2 {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.textblock2 .P9{
+    color: rgb(47, 110, 163);
+    font-weight: bold;
+    font-family: 'roboto';
+    font-size: 21px;
+}
+
+.textblock2 p {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'roboto';
+}
+
+.textblock2 span {
+    font-style: italic;
+    color: black;
+}
+
+.textblock2 a {
+    text-decoration: none;
+    color: rgb(32, 167, 186);
+}
+
+
+
+

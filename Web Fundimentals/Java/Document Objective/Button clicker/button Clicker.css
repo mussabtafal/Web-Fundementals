@@ -1,0 +1,145 @@
+/* CSS Mods*/
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 650px;
+    margin: 0px auto;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+/* Header CSS*/
+
+.header {
+    display: flex;
+    height: 60px;
+    background-color: silver;
+}
+
+.header p {
+    margin-top: 7px;
+    margin-left: 20px;
+    font-size: 35px;
+}
+
+.headleft {
+    display: flex;
+    align-items: center;
+    margin-left: 55px;
+}
+
+.headleft input {
+    margin-right: 80px;
+    width: 270px;
+    height: 20px;
+    font-family: 'Balsamiq Sans', cursive;
+    font-style: italic;
+    border: 2px solid black;
+}
+
+.headleft button {
+    width: 60px;
+    height: 25px;
+    background-color: rgb(43, 120, 228);
+    font-family: 'Balsamiq Sans', cursive;
+    box-shadow: 2px 2px 2px;
+    border: 2px solid black;
+}
+
+/*Main CSS */
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Def1,
+.Def2 {
+    display: flex;
+    border: 2px solid black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 435px;
+    height: 150px;
+}
+
+.Def1 .Word,
+.Def2 .Word {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.Def1 .p1,
+.Def2 .p1 {
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.Def1 .p2,
+.Def2 .p2 {
+    margin-top: 55px;
+    margin-left: 60px;
+    font-size: 16px;
+}
+
+.Def1 .p3,
+.Def2 .p3 {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.main .p3 span {
+    font-style: italic;
+}
+
+.main .p2 span{
+    color: rgb(47, 110, 165);
+    text-decoration: underline;
+}
+
+.Def1 .Word button,
+.Def2 .Word button {
+    margin-top: 20px;
+    background-color: rgb(255, 217, 102);
+    width: 80px;
+    height: 25px;
+    font-family: 'Balsamiq Sans', cursive;
+    box-shadow: 2px 2px 2px;
+    border: 2px solid black;
+}
+
+.Def1 .Word h1,
+.Def2 .Word h1 {
+    font-size: 35px;
+    margin-left: 5px;
+}
+
+aside {
+    border: 2px solid black;
+    margin-top: 20px;
+    margin-bottom: 20px;  
+    height: 120PX;
+    width: 190px;
+}
+
+aside p {
+    font-size: 22px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+aside button {
+    background-color: rgb(147, 196, 125);
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 160px;
+    height: 28px;
+    font-family: 'Balsamiq Sans', cursive;
+    box-shadow: 2px 2px 2px;
+    border: 2px solid black;
+}
