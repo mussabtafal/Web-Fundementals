@@ -1,10 +1,20 @@
 //Function 1 remove request on click
-function removeRequest(e) {
+var request = document.querySelector(".sidenav1 .headerblack button")
+var conncetion = document.querySelector(".sidenav2 .headerblack button")
+
+function acceptRequest(e) {
     e.parentElement.parentElement.remove();
+    request.innerText--;
+    conncetion.innerHTML++;
+
+}
+function closeRequest(e) {
+    e.parentElement.parentElement.remove();
+    request.innerText--;
 }
 
 //Function 2 Change the name on click
-var name = document.querySelector(".usercard H1")
-function changeName(e) {
-    name.innerHTML = "Oday Qasrawi"
+var name1 = document.querySelector(".usercard H1")
+function changeName() {
+    name1.innerHTML = "Oday Qasrawi"
 }
