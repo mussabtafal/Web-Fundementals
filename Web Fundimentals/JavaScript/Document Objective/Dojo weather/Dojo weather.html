@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo weather</title>
+    <link rel="stylesheet" href="Dojo weather.css">
+</head>
+<body>
+    <div class = head1>
+        <h1>Dojo weather</h1>
+        <ul>
+            <li onclick="alert('Loading weather report ...')">Burbank</li>
+            <li onclick="alert('Loading weather report ...')">Chicago</li>
+            <li onclick="alert('Loading weather report ...')">Dallas</li>
+        </ul>
+    </div>
+    <div class="head2">
+        <p>San Jose</p>
+        <div class="leftside">
+            <p>show temprature in</p>
+            <select name="temprature" id="selection" onchange="tempC_F(this)">
+                <option value="C">&#176 C </option>
+                <option value="F">&#176 F </option>
+            </select>
+        </div>
+    </div>
+    <article>
+        <div class="block">
+            <p class="p1">Today</p>
+            <img src="assets\some_rain.png" alt="rain">
+            <p class="p2">some rain</p>
+            <div class="temp">
+                <p class="p3" id="td1">24&#176</p>
+                <p class="p4" id="tn1">18&#176</p>
+            </div>
+        </div>
+        <div class="block">
+            <p class="p1">Tomorrow</p>
+            <img src="assets\some_sun.png" alt="sun">
+            <p class="p2">some sun</p>
+            <div class="temp">
+            <p class="p3" id="td2">27&#176</p>
+            <p class="p4" id="tn2">19&#176</p>
+            </div>
+        </div>
+        <div class="block">
+            <p class="p1">Friay</p>
+            <img src="assets\some_clouds.png" alt="cloud">
+            <p class="p2">some clouds</p>
+            <div class="temp">
+            <p class="p3" id="td3">21&#176</p>
+            <p class="p4" id="tn3">16&#176</p>
+            </div>
+        </div>
+        <div class="block">
+            <p class="p1">Saturday</p>
+            <img src="assets\some_sun.png" alt="sun">
+            <p class="p2">some sun</p>
+            <div class="temp">
+            <p class="p3" id="td4">26&#176</p>
+            <p class="p4" id="tn4">21&#176</p>
+            </div>
+        </div>
+    </article>
+    <section>
+        <img src="assets\cookie.png" alt="Cookie">
+        <p><span>Stop! Cookie time </span><br>We use cookies (Sadly not the edible ones) to personalize <br>
+        content and adds, to provide social media features and to <br>analyse our traffic. <a href="#">Read more...</a></p>
+        <button onclick="hide(this)">I Accept</button>
+    </section>
+    <script src="Dojo weather.js"></script>
+</body>
+</html>

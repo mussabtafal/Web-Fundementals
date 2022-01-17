@@ -16,5 +16,6 @@ function closeRequest(e) {
 //Function 2 Change the name on click
 var name1 = document.querySelector(".usercard H1")
 function changeName() {
-    name1.innerHTML = "Oday Qasrawi"
+    var a = prompt(); 
+    name1.innerHTML = a
 }

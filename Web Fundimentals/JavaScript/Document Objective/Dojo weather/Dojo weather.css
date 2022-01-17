@@ -1,0 +1,165 @@
+/* CSS MODIFICATIONS */
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;   
+}
+
+body {
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+/* Head CSS */
+
+.head1 {
+    margin: 0px auto;
+    display: flex;
+    font-size: 22px;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(159, 197, 248);
+    height: 80px;
+    color: white;
+}
+
+.head1 h1{
+    margin-left: 320px;
+}
+
+.head1 ul {
+    display: flex;
+    margin-left: 240px;
+}
+.head1 ul li {
+    list-style: none;
+    font-size: 25px;
+    margin-right: 50px;
+}
+
+.head2 {
+    display: flex;
+    align-items: flex-end;
+    margin: 0px auto;
+    width: 890px;
+    border-bottom: 2px solid black;;
+}
+
+.head2 p {
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+
+.leftside {
+    display: flex;
+    align-items: flex-end;
+    height: 70px;
+    margin-left: 510px;
+}
+.leftside select {
+    width: 60px;
+    height: 40px;
+    margin-bottom: 10px;
+    border:2px solid black;
+}
+
+.head2 .leftside p {
+    font-size: 18px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+article {
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    width: 890px
+}
+
+section {
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    width: 890px
+}
+
+.block {
+    text-align: center;
+    width: 200px;
+    height: 335px;
+    margin-top: 20px;
+    background-color: rgb(238, 238, 238);
+}
+
+.block .p1 {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.block img {
+    height: 150px;
+    margin-top: 15px;
+    border-radius: 250px;
+}
+
+.block .p2 {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.block .temp {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 0px 35px;
+}
+
+.block .p3 {
+    font-size: 25px;
+    color: rgb(207, 42, 39);
+    font-weight: bold;
+}
+
+.block .p4 {
+    font-size: 25px;
+    color: rgb(80, 143, 229);
+    font-weight: bold;
+}
+
+section {
+    background-color: rgb(238, 238, 238);
+    position: fixed;
+    left: 322px;
+    margin-top: 10px;
+    border: 2px solid black;
+    height: 100px;
+}
+
+section p span {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+section p {
+    font-size: 18px;
+    margin-left: 35px;
+}
+
+section a {
+    color: rgb(30, 98, 156);
+}
+
+section img {
+    height: 70px;
+    display: flex;
+    margin-left: 30px;
+}
+
+section button {
+    background-color: rgb(159, 197, 248);
+    box-shadow: 4px 4px 4px black;
+    font-size: 16px;
+    width: 100px;
+    height: 30px;
+    margin-left: 90px;
+}
