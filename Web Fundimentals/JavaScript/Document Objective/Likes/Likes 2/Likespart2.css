@@ -1,0 +1,86 @@
+/*Css Mods*/
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Balsamiq Sans', cursive;
+    margin: 0px auto;
+}
+
+/*Head Mods*/
+
+.head {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 33px;
+    height: 50px;
+    width: 650px;
+    margin: 0px auto;
+    padding-left: 15px;
+}
+
+.feed {
+    background-color: yellow;
+    margin: 0px auto;
+    width: 665px;
+    font-size: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    
+}
+
+aside img {
+    height: 30px;
+}
+
+article {
+    margin-left: 25px   ;
+}
+
+.card {
+    border: 2px solid black;
+    margin-top: 10px;
+    margin-left: 80px;
+    padding-top: 15px;
+    padding-left: 15px;
+    width: 400px;
+    height: 130px;
+}
+
+.card .p2{
+    margin-top: 35px;
+    font-size: 19px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+}
+
+.main h1 {
+    font-size: 22px;
+}
+
+.main p {
+    margin-top: 5px;
+    margin-left: 120px;
+}
+
+.main button {
+    margin-top: 5px;
+    margin-left: 38px;
+    background-color: rgb(255, 217, 102);
+    box-shadow: 4px 4px 4px black;
+    width: 60px;
+    height: 30px;
+    
+}
+
