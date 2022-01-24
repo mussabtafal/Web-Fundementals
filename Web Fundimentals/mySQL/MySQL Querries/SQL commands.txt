@@ -1,0 +1,34 @@
+****************************************************************
+Command Line Querries
+****************************************************************
+
+1- INSERT INTO users (Id, first_name, Last_name, email, created_at, updated_at)
+VALUES ( 1, 'Mussab', 'Taffal', 'mussab_tafal@hotmail.com', now(), now()) ;
+
+INSERT INTO users (Id, first_name, Last_name, email, created_at, updated_at)
+VALUES ( 2, 'Jehad', 'Issa', 'jehadissa93@gmail.com', now(), now());
+
+INSERT INTO users (Id, first_name, Last_name, email, created_at, updated_at)
+VALUES ( 3, 'Mohammed', 'Omair', 'mohammedomair@hotmail.com', now(), now());
+
+2- select * from users
+
+3- select * from users
+where email = 'mussab_tafal@hotmail.com' ;
+
+4- select * from users
+where Id = 3 ;
+
+5- DELETE FROM users
+where Id = 2
+
+6- SELECT *
+FROM users
+ORDER BY first_name ASC;
+
+7- SELECT *
+FROM users
+ORDER BY first_name DESC;
+
+
+
