@@ -1,0 +1,51 @@
+insert into users ( first_name, last_name, created_at, updated_at)
+values ('Mussab', 'Taffal', now(), now()), ('Mohammed', 'Omair', now(), now()), ('Jehad', 'Issa', now(), now()), ('Mahmoud', 'Issa', now(), now()), ('Ahmad', 'Abdelqader', now(), now()), ('Hassan', 'Odeh', now(), now());
+
+select * from users
+
+
+select users.first_name, users.last_name, friends.first_name, friends.last_name
+ 
+
+
+insert into friendships (updated_at, created_at, user_id, friend_id)
+values (now(),now(),1,2),(now(),now(),1,4),(now(),now(),1,6),(now(),now(),2,1),(now(),now(),2,3),(now(),now(),2,5),(now(),now(),3,2),(now(),now(),3,5),(now(),now(),4,3),(now(),now(),5,1),(now(),now(),5,6),(now(),now(),6,2),(now(),now(),6,3);
+
+
+
+select users.first_name, users.last_name, friends.first_name, friends.last_name
+from users 
+join friendships on users.id = friendships.user_id
+join users as friends on friends.id = friendships.friend_id 
+
+select users.first_name, users.last_name, friends.first_name, friends.last_name
+from users 
+join friendships on users.id = friendships.user_id
+join users as friends on friends.id = friendships.friend_id 
+where users.id = 1
+
+
+select users.first_name, users.last_name, friends.first_name, friends.last_name, count(friendships.id)
+from users 
+join friendships on users.id = friendships.user_id
+join users as friends on friends.id = friendships.friend_id 
+
+
+select users.first_name, users.last_name, friends.first_name, friends.last_name, count(friendships.id)
+from users 
+join friendships on users.id = friendships.user_id
+join users as friends on friends.id = friendships.friend_id 
+group by users.first_name
+
+
+
+select users.first_name, users.last_name, friends.first_name, friends.last_name
+from users 
+join friendships on users.id = friendships.user_id
+join users as friends on friends.id = friendships.friend_id 
+where users.id = 3
+
+
+
+
+
