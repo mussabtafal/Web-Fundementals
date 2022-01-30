@@ -1,0 +1,327 @@
+/* CSS RESETS  */
+
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: 'Balsamiq Sans', cursive;
+	margin: 0px auto;
+	background-color: #DDDDDD;
+}
+
+.main_container {
+	width: 1155;
+	margin: 40px 165px;
+	display: flex;
+}
+
+
+/* Head CSS */
+
+header {
+	height: 90px;
+	width: 1155px;
+	display: flex;
+	align-items: center;
+	padding: 0px 190px;
+	background-color: white;
+}
+
+header h1 {
+	font-size: 33px;
+	margin-bottom: 8px;
+}
+
+header .live_scores {
+	width: 900px;
+	font-size: 22px;
+	margin-left: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+/* NAV BAR CSS */
+
+nav {
+	height: 60px;
+	width: 1175px;
+	display: flex;
+	align-items: center;
+	background-color: #000000;
+	padding: 0px 180px;
+}
+
+nav h2 {
+	color: white;
+	transform: skew(-24deg);
+	background-color: #FF1800;
+	width: 170px;
+	height: 59px;
+	text-align: center;
+	font-size: 50px;
+}
+
+nav a {
+	font-size: 24px;
+	color: white;
+	text-decoration: none;
+	margin: 15px 0px 0px 40px;
+}
+
+.nav_icons {
+	margin: 15px 0px 0px 80px;
+	display: flex;
+	align-items: baseline;
+}
+
+.nav_icons img {
+	height: 35px;
+}
+
+
+/* SIDE BARS CSS */
+
+aside {
+	width: 290px;
+	margin-right: 40px;
+}
+
+.top_stories {
+	border-radius: 25px;
+	height: 270px;
+	background-color: white;
+	padding: 20px;
+}
+
+.top_stories h3 {
+	font-size: 32px;
+	border-bottom: 3px solid black;
+	padding-bottom: 10px;
+}
+
+.top_stories p {
+	font-size: 22px;
+	margin-top: 15px;
+}
+
+.ad {
+	background-color: white;
+	font-size: 22px;
+	margin-top: 25px;
+	border-radius: 25px;
+	height: 125px;
+	padding-left: 15px;
+}
+
+.ad p {
+	padding: 15px 0px 0px 20px;
+}
+
+.ad_buttons button {
+	width: 105px;
+	height: 40px;
+	border: 4px solid black;
+	box-shadow: 6px 6px 6px black;
+}
+
+.ad #btn1 {
+	margin-left: 20px;
+	margin-top: 20px;
+	color: white;
+	background-color: #2277EA;
+}
+
+.ad #btn2 {
+	margin-top: 20px;
+	background-color: white;
+}
+
+.subscribe {
+	background-color: white;
+	font-size: 20px;
+	margin-top: 25px;
+	border-radius: 25px;
+	height: 125px;
+}
+
+.subscribe p {
+	padding: 15px 0px 0px 35px;
+}
+
+.subscribe #btn3 {
+	margin: 10px 0px 0px 20px;
+	background-color: #FFE599;
+	width: 240px;
+	height: 40px;
+	border: 4px solid black;
+	box-shadow: 6px 6px 6px black;
+}
+
+
+/* ARTICLE CSS */
+
+article {
+	width: 800px;
+	background-color: white;
+	border-radius: 25px;
+}
+
+article h3 {
+	text-align: center;
+	font-size: 48px;
+	margin: 25px 30px 0px 0px;
+	font-weight: normal;
+}
+
+article h3 span {
+	color: #FF1900;
+	font-weight: lighter;
+}
+
+.dot {
+	height: 25px;
+	width: 25px;
+	background-color: #FF1900;
+	border-radius: 50%;
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.team {
+	display: flex;
+}
+
+.team p {
+	font-size: 50px;
+	margin-top: 70px;
+	margin-left: 75px;
+}
+
+.team #img1 {
+	margin-top: 20px;
+	margin-right: 50px;
+	margin-left: 55px;
+	height: 160px;
+}
+
+.team #img2 {
+	margin-top: 20px;
+	margin-left: 125px;
+	height: 160px;
+}
+
+.scores {
+	display: flex;
+	font-size: 20px;
+}
+
+.score1 {
+	text-align: left;
+	margin-top: 20px;
+	margin-left: 60px;
+}
+
+.score2 {
+	text-align: left;
+	margin-top: 20px;
+	margin-left: 100px;
+}
+
+.scores #time {
+	margin-top: 20px;
+	margin-left: 140px;
+}
+
+.pscore1 {
+	font-size: 25px;
+}
+
+.pscore21 {
+	font-weight: bold;
+	font-size: 45px;
+	color: #178089;
+}
+
+.pscore22 {
+	font-weight: bold;
+	font-size: 45px;
+	color: #CC202F;
+}
+
+.pscore3 {
+	font-size: 20px;
+}
+
+.pscore_ninja,
+.pscore_pirates {
+	font-size: 60px;
+	font-weight: bold;
+}
+
+article #p3 {
+	font-size: 20px;
+	margin: 30px 30px 30px 50px;
+	border-top: 3px solid black;
+	padding: 30px 0px 20px;
+}
+
+.ad {
+	background-color: white;
+	font-size: 22px;
+	margin-top: 25px;
+	border-radius: 25px;
+	height: 125px;
+	padding-left: 15px;
+}
+
+.ad p {
+	padding: 15px 0px 0px 20px;
+}
+
+.ad_buttons button {
+	width: 105px;
+	height: 40px;
+	border: 4px solid black;
+	box-shadow: 6px 6px 6px black;
+}
+
+.ad #btn1 {
+	margin-left: 20px;
+	margin-top: 20px;
+	color: white;
+	background-color: #2277EA;
+}
+
+.ad #btn2 {
+	margin-top: 20px;
+	background-color: white;
+}
+
+.subscribe {
+	background-color: white;
+	font-size: 20px;
+	margin-top: 25px;
+	border-radius: 25px;
+	height: 125px;
+}
+
+.subscribe p {
+	padding: 15px 0px 0px 35px;
+}
+
+.subscribe #btn3 {
+	margin: 10px 0px 0px 20px;
+	background-color: #FFE599;
+	width: 240px;
+	height: 40px;
+	border: 4px solid black;
+	box-shadow: 6px 6px 6px black;
+}
+
+article #p3 a {
+	color: #4A6DA0;
+}
