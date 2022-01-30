@@ -1,0 +1,63 @@
+
+*** pip list ***
+Package      Version
+------------ -------
+asgiref      3.5.0
+click        8.0.3
+colorama     0.4.4
+Django       4.0.1
+Flask        2.0.2
+itsdangerous 2.0.1
+Jinja2       3.0.3
+MarkupSafe   2.0.1
+pip          22.0
+setuptools   58.1.0
+sqlparse     0.4.2
+tzdata       2021.5
+Werkzeug     2.0.2
+
+***call py3Env\Scripts\activate***
+(py3Env) C:\Users\mussa\Desktop\Axsos\Python_stack\my_environments>
+
+
+***pip list (with virtual environment active)***
+Package    Version
+---------- -------
+pip        22.0
+setuptools 58.1.0
+
+***pip install django***
+installs django and assigns it to the virtual environment
+
+
+***pip freeze***
+pip freeze is a very useful command, because it tells you which modules you've installed with pip install
+and the versions of these modules that you are currently have installed on your computer.
+
+
+***pip uninstall django***
+removes Django from the virtual environment
+
+
+***pip show django***
+Name: Django
+Version: 4.0.1
+Summary: A high-level Python web framework that encourages rapid development and clean, pragmatic design.
+Home-page: https://www.djangoproject.com/
+Author: Django Software Foundation
+Author-email: foundation@djangoproject.com
+License: BSD-3-Clause
+Location: c:\users\mussa\appdata\local\programs\python\python310\lib\site-packages
+Requires: asgiref, sqlparse, tzdata
+Required-by:
+
+
+***deactivate***
+C:\Users\mussa\Desktop\Axsos\Python_stack\my_environments>
+
+
+
+
+
+
+
