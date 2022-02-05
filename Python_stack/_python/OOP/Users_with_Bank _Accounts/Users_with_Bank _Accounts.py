@@ -28,10 +28,7 @@ class User:
     def __init__(self, name, email):
         self.name = name
         self.email = email
-        # array = []
-        # for i in range (0,accounts,1):
-        # array.append(BankAccount(int_rate=0.02, balance = 0))
-        self.account =[BankAccount(int_rate=0.02, balance = 0)]
+        self.account = [BankAccount(int_rate=0.02, balance = 0)]
 
     def make_withdrawal(self, amount, i):
         self.account[i].withdraw(amount)
@@ -50,6 +47,8 @@ class User:
         return self
 
 mussab = User("Mussab Taffal", "mussab_tafal@hotmail.com")
+
+mussab.account[0].deposit()
 
 mussab.make_deposit(800, 0).display_user_balance(0)
 mussab.new_account().make_deposit(200, 1).display_user_balance(1).new_account().make_deposit(150,2).display_user_balance(2)

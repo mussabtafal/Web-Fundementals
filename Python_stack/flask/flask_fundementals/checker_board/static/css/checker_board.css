@@ -1,0 +1,25 @@
+body {
+    margin: 0px, auto;
+}
+
+
+.container {
+    font-size: 0px;
+}
+
+
+.box1 {
+    background-color: white;
+    border: 1px solid black;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+}
+
+.box2 {
+    background-color: black;
+    border: 1px solid black;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+}
