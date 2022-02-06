@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo form</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS_index/index.css')}}">
+</head>
+<body>
+    <div class = "container">
+        <form action='/result' method='post'>
+            <div> Your Name: <input type='text' name='name'></div>
+            <div>
+                Dojo Location:
+                <select name="location">
+                    <option value="Ramallah">Ramallah</option>
+                    <option value="Nablus">Nablus</option>
+                    <option value="Tulkarm">Tulkarm</option>
+                    <option value="Jenin">Jenin</option>
+                    <option value="Qalqilya">Qalqilya</option>
+                    <option value="Hebron">Hebron</option>
+                    <option value="Jerusalem">Jerusalem</option>
+                </select>
+            </div>
+            <div>
+                Favorite Language:
+                <select name="language">
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                    <option value="c#">C#</option>
+                    <option value="c++">C++</option>
+                </select>
+            </div>
+            <div>
+                Gender:
+                <input type="radio" name="gender" value="Male" id="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" value="Female" id="female">
+                <label for="female">Female</label>
+            </div>
+            <p>Would you like to recieve email from Codingdojo.com ?</p>
+            <div>
+                <input type="checkbox" name="accept" id="accept" value=" I accept !">
+                <label for="accept">I agree !!</label>
+            </div>
+            <p>Comment (optional):</p>
+            <div><textarea name="comment" cols="79" rows="10"></textarea></div>    
+            <input type='submit' value='Button' id = 'button'>
+        </form>
+    </div>
+</body>
+</html>

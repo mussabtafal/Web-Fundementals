@@ -1,0 +1,27 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    margin: 0px auto;
+}
+
+.container {
+    border: 2px solid black;
+    width: 600px;
+    margin: 70px 200px 0px;
+    padding: 30px;
+}
+
+form * {
+    margin: 10px 0px;
+}
+
+#button {
+    position: relative;
+    left:  500px;
+    width: 100px;
+}
+
+
