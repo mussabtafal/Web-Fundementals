@@ -1,0 +1,28 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    margin: 0px auto;
+    width: 500px;
+    font-family: cursive;
+}
+
+.div1 {
+    border: 2px solid black;
+    width: 200px;
+    height: 35px;
+    margin-bottom: 15px;
+    margin-left: 150px;
+    font-size: 10px;
+    text-align: center;
+}
+
+.div2 {
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+

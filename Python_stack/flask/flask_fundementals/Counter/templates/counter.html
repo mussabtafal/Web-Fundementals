@@ -6,20 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Counter</title>
 </head>
-<body>
+    <body>
         <h1>Counter</h1>
         <p>{{session['counter']}} times</p>
-    <form action="/plus2">
-        <div><button type="submit"> add two visits!</button></div>
-    </form>
-    <form action="/destroy_session">
-        <button type="submit"> reset !</button>
-    </form> 
-    <form action="/random", method ="POST">
-        <input type="number" min="0" name="random_counter">
-    </form>
-
-<p>Number of actual visits is {{session['actual_counter']}}  </p>
-
-</body>
+        <form action="/plus2">
+            <div><button type="submit"> add two visits!</button></div>
+        </form>
+        <form action="/destroy_session">
+            <button type="submit"> reset !</button>
+        </form> 
+        <form action="/random", method ="POST">
+            <input type="number" min="0" name="random_counter">
+        </form>
+        <p>Number of actual visits is {{session['actual_counter']}}</p>
+    </body>
 </html>
