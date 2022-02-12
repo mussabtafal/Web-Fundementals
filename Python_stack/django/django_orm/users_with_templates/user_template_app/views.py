@@ -15,3 +15,11 @@ def form(request):
         email_address = request.POST['email'],
         age = request.POST['age'])
     return redirect("/")
+
+def delete(request):
+    User.objects.all().delete()
+    return redirect("/")
+
+def deleteuser(request):
+    User.objects.get(id = request.POST['userid']).delete()
+    return redirect("/")

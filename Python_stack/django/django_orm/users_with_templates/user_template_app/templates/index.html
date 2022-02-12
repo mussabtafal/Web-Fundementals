@@ -35,7 +35,7 @@
                 {% endfor %}
             </table>
         </div>
-        <form action="/user_form", method ="POST" class="">
+        <form action="/user_form", method ="POST">
             {% csrf_token %}
             <div class="row my-5 px-5 justify-content-center">
                 <h1 class="text-center">Add a User</h1>
@@ -70,6 +70,18 @@
                 <div class="row my-3 px-5">
                     <button type="submit" class="btn btn-primary col-2  mx-auto">Add</button>
                 </div>
+            </div>
+        </form>
+        <form action="/deleteuser", method ="POST">
+            {% csrf_token %}
+            <div class="form-floating">
+                <div class="form-floating mb-3">
+                    <input type="number" min = "0" name = "userid" class="form-control" id="floatingInput" placeholder="e.g. 10">
+                    <label for="floatingInput">User ID</label>
+                </div>
+            </div>
+            <div class="row my-3 px-5">
+                <button type="submit" class="btn btn-primary col-2  mx-auto">Delete</button>
             </div>
         </form>
     </div>
