@@ -1,0 +1,42 @@
+dojo_one = Dojo.objects.create(name="Code Karate", city="Boston", state="MA")
+dojo_two = Dojo.objects.create(name="Kungfu Programing", city="Chicago", state="IL")
+dojo_three = Dojo.objects.create(name="IT Samurais", city="San Francisco", state="CA")
+
+dojos_delete = Dojo.objects.all()
+dojos_delete.delete()
+
+dojo_one = Dojo.objects.create(name="Code Karate", city="Boston", state="MA")
+dojo_two = Dojo.objects.create(name="Kungfu Programing", city="Chicago", state="IL")
+dojo_three = Dojo.objects.create(name="IT Samurais", city="San Francisco", state="CA")
+
+
+this_dojo = Dojo.objects.get(id=4)
+ninja_one = Ninja.objects.create(first_name="Mussab", last_name="Taffal", dojo = this_dojo)
+ninja_two = Ninja.objects.create(first_name="Abdelhadi", last_name="Numan", dojo = this_dojo)
+ninja_three = Ninja.objects.create(first_name="Mohammed", last_name="Omair", dojo = this_dojo)
+
+this_dojo = Dojo.objects.get(id=5)
+ninja_one = Ninja.objects.create(first_name="Ahmed", last_name="Jamal", dojo = this_dojo)
+ninja_two = Ninja.objects.create(first_name="Ahmed", last_name="Abdelqader", dojo = this_dojo)
+ninja_three = Ninja.objects.create(first_name="Sanad", last_name="Shama", dojo = this_dojo)
+
+this_dojo = Dojo.objects.get(id=6)
+ninja_one = Ninja.objects.create(first_name="Maher", last_name="Abdelkareem", dojo = this_dojo)
+ninja_two = Ninja.objects.create(first_name="Mahmoud", last_name="Issa", dojo = this_dojo)
+ninja_three = Ninja.objects.create(first_name="Rafat", last_name="Darawsheh", dojo = this_dojo)
+
+some_dojo = Dojo.objects.get(id=4)
+for Ninja in some_dojo.ninja.all():
+...     print(Ninja.first_name)
+
+some_dojo = Dojo.objects.get(id=6)
+for Ninja in some_dojo.ninja.all():
+...     print(Ninja.first_name)
+
+last_ninja = Ninja.objects.get(id=9)
+last_ninja.dojo.name
+
+
+
+
+dojo_four = Dojo.objects.create(name="Omair Stupidity Hack Dojo", city="Donkey", state="DK")
