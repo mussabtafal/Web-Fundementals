@@ -21,8 +21,8 @@ def create_user(request):
         "checkbox_on_template" : checkbox_from_form,
         "comment_on_template" : comment_from_form,
     }
-    return render(request,"result.html",context)
+    return render(request,"process.html",context)
 
-def process(request):
-    # this is the success route
-    return render(request,"process.html")
+# def process(request):
+#     # this is the success route
+#     return render(request,"process.html")

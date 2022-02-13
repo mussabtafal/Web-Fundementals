@@ -1,0 +1,90 @@
+book_one = Book.objects.create(title = "C Sharp", desc = "Explains C#")
+book_two = Book.objects.create(title = "Java", desc = "Explains Java")
+book_three = Book.objects.create(title = "Python", desc = "Explains Python")
+book_four = Book.objects.create(title = "PHP", desc = "Explains PHP")
+book_five = Book.objects.create(title = "Ruby", desc = "Explains Ruby")
+
+author_one = Author.objects.create(first_name = "Jane", last_name = "Austen")
+author_two = Author.objects.create(first_name = "Emily", last_name = "Dickinson")
+author_three = Author.objects.create(first_name = "Fyodor", last_name = "Dostoevsky")
+author_four = Author.objects.create(first_name = "William", last_name = "Shakespeare")
+author_five = Author.objects.create(first_name = "Lau", last_name = "Tzu")
+
+c_book = Book.objects.get(title = "C Sharp")
+c_book.title = ("C#")
+c_book.save()
+
+
+forth_author = Author.objects.get(id = 4)
+forth_author.first_name = ("Bill")
+forth_author.save()
+
+this_book = Book.objects.get(id=1)	
+other_book = Book.objects.get(id=2)
+this_author = Author.objects.get(id=1)	
+this_author.books.add(this_book)
+this_author.books.add(other_book)
+
+this_book = Book.objects.get(id=1)	
+other_book = Book.objects.get(id=2)
+another_book = Book.objects.get(id=3)
+this_author = Author.objects.get(id=2)	
+this_author.books.add(this_book)
+this_author.books.add(other_book)
+
+this_book = Book.objects.get(id=1)	
+other_book = Book.objects.get(id=2)
+another_book = Book.objects.get(id=3)
+and_another_book = Book.objects.get(id=4)
+this_author = Author.objects.get(id=3)	
+this_author.books.add(this_book)
+this_author.books.add(other_book)
+this_author.books.add(another_book)
+this_author.books.add(and_another_book)
+
+
+this_book = Book.objects.get(id=1)	
+other_book = Book.objects.get(id=2)
+another_book = Book.objects.get(id=3)
+and_another_book = Book.objects.get(id=4)
+and_its_another_book = Book.objects.get(id=5)
+this_author = Author.objects.get(id=4)	
+this_author.books.add(this_book)
+this_author.books.add(other_book)
+this_author.books.add(another_book)
+this_author.books.add(and_another_book)
+this_author.books.add(and_its_another_book)
+
+all_books = Book.objects.all()	
+this_author = Author.objects.get(id=5)	
+this_author.books.add(all_books)
+
+this_book = Book.objects.get(id=3)
+this_book.authors.all()
+
+this_book = Book.objects.get(id=3)
+first_author = Author.objects.get(id=2)
+first_author.books.remove(this_book)
+
+this_book = Book.objects.get(id=2)	
+this_author = Author.objects.get(id=5)	
+this_author.books.add(this_book)
+
+this_author = Author.objects.get(id=3)
+this_author.books.all()
+
+this_book = Book.objects.get(id=5)		
+this_book.authors.all()
+
+
+
+
+
+
+
+
+
+
+    
+
+
