@@ -64,7 +64,11 @@
         <label for="activities" style="font-size: 20px;">Activities</label>
         <div class="col-12 border p-2" style="height: auto;">
             {% for i in request.session.log %}
-                <p style="font-size: 10px;">{{i}}</p>    
+                {% if request.session.result == 'negative' %}
+                    <p style="font-size: 10px; color: red;">{{i}}</p>  
+                {% else %} 
+                <p style="font-size: 10px; color: rgb(43, 214, 43);">{{i}}</p>
+                {% endif %}
             {% endfor %}        
         </div>
     </div>

@@ -81,6 +81,7 @@ def addgold(request):
                 date_time = addtime.strftime("%m/%d/%Y, %H:%M:%p")
                 activity = request.session['log'] 
                 activity.append("Earned {} golds from the farm! {}".format(amount, date_time))
+                request.session['result'] = "positive"
                 print(random.randint(10, 20))
                 print(request.session['gold'])
                 return redirect("/")
@@ -93,6 +94,7 @@ def addgold(request):
                 date_time = addtime.strftime("%m/%d/%Y, %H:%M:%p")
                 activity = request.session['log'] 
                 activity.append("Earned {} golds from the cave! {}".format(amount, date_time))
+                request.session['result'] = "positive"
                 print(random.randint(10, 20))
                 print(request.session['gold'])
                 return redirect("/")
@@ -105,6 +107,7 @@ def addgold(request):
                 date_time = addtime.strftime("%m/%d/%Y, %H:%M:%p")
                 activity = request.session['log'] 
                 activity.append("Earned {} golds from the house! {}".format(amount, date_time))
+                request.session['result'] = "positive"
                 print(random.randint(10, 20))
                 print(request.session['gold'])
                 return redirect("/")
@@ -118,11 +121,13 @@ def addgold(request):
                     date_time = addtime.strftime("%m/%d/%Y, %H:%M:%p")
                     activity = request.session['log'] 
                     activity.append("Entered a casino and lost {} golds ... ouch.. {}".format(amount, date_time))
+                    request.session['result'] = "negative"
                 elif amount >= 0:
                     addtime = datetime.datetime.now()
                     date_time = addtime.strftime("%m/%d/%Y, %H:%M:%p")
                     activity = request.session['log'] 
                     activity.append("Earned {} golds from the casino! {}".format(amount, date_time))
+                    request.session['result'] = "positive"
                 print(random.randint(10, 20))
                 print(request.session['gold'])
                 return redirect("/")
