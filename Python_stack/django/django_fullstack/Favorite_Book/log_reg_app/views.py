@@ -20,7 +20,6 @@ def add_user(request):
         this_user = User.objects.create(
         first_name = request.POST['first_name'],
         last_name = request.POST['last_name'],
-        user_dob = request.POST['dob'],
         useremail = request.POST['email'],
         userpassword = pw_hash,)
         request.session['userid'] = this_user.id
@@ -41,16 +40,11 @@ def user_login(request):
             if bcrypt.checkpw(request.POST['password'].encode(), logged_user.userpassword.encode()):
                 request.session['userid'] = logged_user.id
                 request.session['userfirstname'] = logged_user.first_name
-                return redirect("/success")
+                return redirect("/books")
         return redirect('/books')
 
 def delete_session(request):
-    if not 'userid' in request.session:
-        request.session['userid'] = 0
-    if not 'userid' in request.session:
-        request.session['userfirstname'] = ""
-    del request.session['userfirstname']
-    del request.session['userid']
+    request.session.clear()
     return redirect("/")
 
 def delete_database(request):

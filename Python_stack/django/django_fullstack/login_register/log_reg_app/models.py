@@ -24,7 +24,7 @@ class RegManager(models.Manager):
             errors["password"] = "Password should be at least 8 characters"
 
         if postData['password'] != postData['confirm_password']:
-                errors["confirm_password"] = "Passwords Does not match"
+            errors["confirm_password"] = "Passwords Does not match"
         
         if postData['dob'] == 0000-00-00:
             errors["dob_exist"] = "Date is mandatory"

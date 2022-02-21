@@ -10,6 +10,7 @@ def index():
 @app.route('/result', methods=['POST'])
 def create_user():
     print("Got Post Info")
+    print(request.form)
     # Here we add two properties to session to store the name and email
     name_from_form = request.form['name']
     location_from_form = request.form['location']

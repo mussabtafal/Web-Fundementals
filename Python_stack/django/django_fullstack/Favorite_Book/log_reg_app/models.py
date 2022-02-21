@@ -1,6 +1,7 @@
 from django.db import models
 import re
 
+
 class RegManager(models.Manager):
     def basic_validator(self, postData):
         errors = {}

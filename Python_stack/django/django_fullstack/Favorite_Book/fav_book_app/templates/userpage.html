@@ -9,6 +9,51 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
-    
+    <div class="container-lg-fluid border m-3 p-5">
+        <div class="row border-bottom justify-content-between p-3 mb-5">
+            <div class="col-4"> <h1>Welcome, {{request.session.userfirstname}}</h1></div>
+            <div class="col-2 text-end"><a href="/logout">Log Out !</a></div>
+        </div>
+        <div class="row justify-content-around">
+            <div class="col-4">
+                <p style="font-size: 30px;">Add a Favorite Book</p>
+                {% if messages %}
+                <ul class="messages">
+                    {% for message in messages %}
+                    <li {% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+                <form action="/book_add" method="post">
+                    {% csrf_token %}
+                    <div class="form-floating">
+                        <div class="form-floating mb-3 col-6">
+                            <input type="text" name="title" class="form-control" id="floatingInput"
+                                placeholder="e.g. 10">
+                            <label for="floatingInput">Title</label>
+                        </div>
+                    </div>
+                    <div class="form-floating my-3 col-11">
+                        <textarea class="form-control pt-5" name="description" placeholder="Leave a comment here"
+                            id="floatingTextarea2" style="height: 150px"></textarea>
+                        <label for="floatingTextarea2" style="font-size: 20px;">Book Description</label>
+                    </div>
+                    <div class="row justify-content-end"><button type="submit" class="btn btn-primary col-2 me-5">Add !</button></div>
+                </form>
+            </div>
+            <div class="col-4">
+                <p style="font-size: 30px;">All Books</p>
+                {% for book in books %}
+                    <a href="books/{{book.id}}" style="font-size: 25px;">{{book.book_title}}</a>
+                    <p>(added by {{book.user_uploaded_book.first_name}} {{book.user_uploaded_book.last_name}})</p>
+                    {% if book in liked_books %}
+                        <p><em>This is one of your favorites</em></p>
+                    {% else %}
+                        <p class="mb-5"><a href="books/{{book.id}}/favorites">Add to Favorites</a></p>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
 </body>
 </html>
