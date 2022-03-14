@@ -1,0 +1,29 @@
+package com.codingdojo.fruityloops;
+
+public class Item {
+	    // MEMBER VARIABLES
+	    private String name;
+	    private double price;
+	    
+	    // CONSTRUCTOR
+	    public Item(String name, double price) {
+	        this.name = name;
+	        this.price = price;
+	    }
+	    
+	    public String getName() {
+	        return name;
+	    }
+	
+	    public void setName(String name) {
+	        this.name = name;
+	    }
+	
+	    public Double getPrice() {
+	        return price;
+	    }
+	
+	    public void setPrice(double price) {
+	        this.price = price;
+	    }
+}

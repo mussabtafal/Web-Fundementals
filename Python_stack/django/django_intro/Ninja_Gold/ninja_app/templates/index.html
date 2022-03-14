@@ -60,18 +60,18 @@
                 </form>
             </div>
         </div>
-    <div class="row mt-5 col-12 px-5 ">
-        <label for="activities" style="font-size: 20px;">Activities</label>
-        <div class="col-12 border p-2" style="height: auto;">
-            {% for i in request.session.log %}
-                {% if request.session.result == 'negative' %}
-                    <p style="font-size: 10px; color: red;">{{i}}</p>  
-                {% else %} 
-                <p style="font-size: 10px; color: rgb(43, 214, 43);">{{i}}</p>
-                {% endif %}
-            {% endfor %}        
+        <div class="row mt-5 col-12 px-5 ">
+            <label for="activities" style="font-size: 20px;">Activities</label>
+            <div class="col-12 border p-2" style="height: auto;">
+                {% for i in request.session.log %}
+                    {% if request.session.result == 'negative' %}
+                        <p style="font-size: 10px; color: red;">{{i}}</p>  
+                    {% else %} 
+                    <p style="font-size: 10px; color: rgb(43, 214, 43);">{{i}}</p>
+                    {% endif %}
+                {% endfor %}        
+            </div>
         </div>
-    </div>
     <div>
         
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" 
