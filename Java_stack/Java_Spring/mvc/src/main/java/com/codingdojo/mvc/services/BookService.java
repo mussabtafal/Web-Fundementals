@@ -36,12 +36,17 @@ public class BookService {
     
 	public Book updateBook(Long id, String title, String desc, String lang, Integer numOfPages) {
 		Book bookUpdate = this.findBook(id); 
-		bookUpdate.setTitle(title);
-		bookUpdate.setDescription(desc);
-		bookUpdate.setLanguage(lang);
-		bookUpdate.setNumberOfPages(numOfPages);
-		
-		return bookRepository.save(bookUpdate);
+		if (bookUpdate != null) {
+			bookUpdate.setTitle(title);
+			bookUpdate.setDescription(desc);
+			bookUpdate.setLanguage(lang);
+			bookUpdate.setNumberOfPages(numOfPages);
+			
+			return bookRepository.save(bookUpdate);
+		}
+		else {
+			return null;
+		}
 	}
 
 	public void deleteBook(Long id) {
