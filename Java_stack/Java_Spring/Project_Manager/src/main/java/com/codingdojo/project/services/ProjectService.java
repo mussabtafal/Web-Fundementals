@@ -34,9 +34,14 @@ public class ProjectService {
 		}
 	}
 	
+	public List<Project> userProjects (User user) {
+		List<Project> myProjects = projectRepository.findByJoinedUsersContains(user);
+		return myProjects;
+	}
+	
 	public List<Project> joinableProjects(User user) {
-		Optional <List<Project>> joinableProjects = projectRepository.findByJoinedUsersNotContains(user);
-		return joinableProjects.get();
+		List<Project> joinableProjects = projectRepository.findByJoinedUsersNotContains(user);
+		return joinableProjects;
 	}
 	
 	
@@ -55,14 +60,24 @@ public class ProjectService {
 		}
 	}
 	
-	public Project updateProject(Project project) {
-		Project thisProject = projectRepository.findById(project.getId()).orElse(null);
-		assert thisProject != null;
-		thisProject.setTitle(project.getTitle());
-		thisProject.setDescription(project.getDescription());
-		thisProject.setDueDate(project.getDueDate());
-		return projectRepository.save(thisProject);
-		
+	public Project updateProject(Project project, BindingResult result) {
+		Date currentDate = new Date();
+		if (project.getDueDate() == null) {
+			result.rejectValue("dueDate", "Exist", "Please enter a Date");
+			return null;}
+		if (project.getDueDate().after(currentDate)) {
+			result.rejectValue("dueDate", "Compare", "Please enter a Date in the past ");
+			return null;
+		}
+		else {		
+			System.out.println(project.getId());
+			Project thisProject = projectRepository.findById(project.getId()).orElse(null);
+			assert thisProject != null;
+			thisProject.setTitle(project.getTitle());
+			thisProject.setDescription(project.getDescription());
+			thisProject.setDueDate(project.getDueDate());
+			return projectRepository.save(thisProject);
+		}	
 	 }
 	
 	public void Delete(Long id) {
@@ -78,7 +93,7 @@ public class ProjectService {
 	}
 	
 	public Project leaveTeam (User user, Project project) {
-		project.getJoinedUsers().remove(user);
+		project.getJoinedUsers().removeIf(item -> item.getId().equals(user.getId()));
 		return projectRepository.save(project);
 	}
 }

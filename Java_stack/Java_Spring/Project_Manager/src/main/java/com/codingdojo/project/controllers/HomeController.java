@@ -25,16 +25,6 @@ public class HomeController {
     @Autowired
     private UserService userServ;
     
-    @GetMapping("/home")
-    public String home(Model model, HttpSession session) {
-        if (session.getAttribute("user") != null) {
-            model.addAttribute("user", session.getAttribute("user"));
-            return "home.jsp";
-        }else {
-            return "redirect:/";
-        }
-    }
-    
     @GetMapping("/")
     public String index(Model model) {
         // Bind empty User and LoginUser objects to the JSP
@@ -56,7 +46,7 @@ public class HomeController {
             return "index.jsp";
         }
             session.setAttribute("user", user1);
-            return "redirect:/home";   
+            return "redirect:/dashboard";   
         }
 
     
@@ -70,7 +60,7 @@ public class HomeController {
             return "index.jsp";
         }
         session.setAttribute("user", user1);
-        return "redirect:/home";
+        return "redirect:/dashboard";
     }
     
     @GetMapping("/logout")

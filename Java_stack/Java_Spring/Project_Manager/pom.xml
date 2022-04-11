@@ -8,12 +8,12 @@
 		<version>2.6.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.codingdojo.project</groupId>
-	<artifactId>Project_Manager</artifactId>
+	<groupId>com.codingdojo.projectmanager</groupId>
+	<artifactId>ProjectManages</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>Project_Manager</name>
-	<description>My Try for Project Manager Assignment</description>
+	<name>ProjectManages</name>
+	<description>Project Manager Assignment</description>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>

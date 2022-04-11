@@ -63,6 +63,8 @@ public class User {
         this.updatedAt = new Date();
     }
     
+// Relations     
+    
     @OneToMany(mappedBy="teamLeader", fetch = FetchType.LAZY)
     private List<Project> ownedProjects;
     

@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+C:\Users\mussa\Dropbox\PC\Desktop\Axsos\Java_stack\Java_BeltExam\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1202063699.index
+\YogaCourse\src\main\java
+C:\Users\mussa\Dropbox\PC\Desktop\Axsos\Java_stack\Java_BeltExam\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3256072066.index
+\YogaCourse\src\main\java

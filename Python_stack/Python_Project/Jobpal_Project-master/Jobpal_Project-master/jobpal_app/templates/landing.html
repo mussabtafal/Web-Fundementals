@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobpal</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'CSS/style.css'%}">
+    <link rel="stylesheet" href="{% static 'CSS/jquery.flipster.min.css'%}">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#companies">Featured Partners</a></li>
+                <li><a href="#statistics">Statistics</a></li>
+                <li><a  href="#join" >Register</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="/jobs" >Jobs</a></li>
+                <li><a href="/companies">Companies</a></li>
+                {% if request.session.company_id %}
+                <li><a href="/add_job" >Add Job</a></li>
+                <li ><a href="/company_jobs" >Job Applecations</a></li>
+                {% elif request.session.user_id %}
+                  <li><a  href="/user_profile" >Your Profile</a></li>
+                {% endif %}
+              </ul> 
+            </nav>
+        <section id="home" >
+          <img src="{% static 'img\Untitled-1 copy.png' %}" class="d-block w-100 " 
+                  alt="etisalat-logo" style="height: 600px;">
+          <div style="color: rgb(255, 255, 255);">
+            <h1 >What is Jobpal ?</h1>
+            <p style="width: 1200px;font-size: 23px; color: white;">A web application with the main purpose of exchanging information between Job seekers and recruiters about the local 
+              market job needs and available opportunities, users of the platform will be able to register, apply for jobs, add jobs, 
+              get job details and statistics, the job seeker will be able to log all the applied jobs while the recruiter will be able 
+              to log all the received application and filter them by either accepting the application or rejecting it, the recruiter 
+              will be required to send feedback to the rejected applicant specifying the reason of rejection.</p>
+          </div>
+        </section>
+        <section id="companies">
+          <div class="banner">
+            <div class="carousel">
+              <ul>
+                <li><img src="https://www.teoco.com/wp-content/uploads/2019/11/Etisalat.jpg" class="d-block w-100 " 
+                  alt="etisalat-logo" style="height: 500px;"></li>
+                <li><img src="https://www.aliqtisadi.ps/files/image/2018/9/8%209%202018/Ooredoo%20Logo-2-01444555.jpg" class="d-block w-100 " 
+                  alt="Ooredoo_logo" style="height: 500px;"></li>
+                  <li><img src="https://scontent.fjrs1-2.fna.fbcdn.net/v/t1.6435-9/123276026_101804945072888_7460629705823240568_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=4iGnrawBhmAAX9lNFof&_nc_ht=scontent.fjrs1-2.fna&oh=00_AT-l6DWNiNQAJvcNSwOs3jOuHP1NNnC7m2QdzgQ9AJhPKg&oe=62430D14" 
+                    class="d-block w-100" alt="jawwal_logo" style="height: 500px; width: 800px;" ></li>
+                <li><img src="https://www.jawwal.ps/uploads/1595249159.png" class="d-block w-100" alt="jawwal_logo" style="height: 500px;" ></li>
+                <li><img src="https://cdnjobs.net/cached_uploads/fit/650/315/2017/12/22/unipal-logo-1513963710.jpg" class="d-block w-100" alt="jawwal_logo" style="height: 500px;" ></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section id="statistics">
+        </section>
+        <section id="join">
+          <div class="square">
+            <div class="content">
+              <span></span>
+              <span></span>
+              <span></span>
+              <a href="user_register" class="a1">Regirter as Job seeker</a>
+              <a href="company_register" class="a2">Regirter as Company</a>
+            </div>
+          </div>
+        </section>
+        <section id="about">
+            <h1>About Us</h1>
+            <ul style="list-style: none;line-height: 40px;width: 1200px;font-size: 23px;">
+                    <li style="color: rgb(240, 236, 229);">This Website was designed by three enthusiastic junior Web-Devlopers, The idea of JobPal came
+                      from the need for a platform where Job opportunities can be offered and exchanged. We encourage
+                      all the users of the platform to reach out to all the companies registered on the website. Life
+                      is all about opportunities. We hope that this Website will be the seed for all Job seekers who 
+                      are trying to find a place to belong, a place where people can grow professionally and reflect 
+                      on their Careers, We wish you all the luck in the world !</li>
+                    <li style="margin-top: 20px; font-weight: bold;">Designed and maintained By:</li>
+                    <li>Mussab Tafal,&nbsp;  Rafat Darawshe,&nbsp;  Masa Shabib</li>
+                    <li style="margin-top: 20px;">Please feel free to contact us regarding any problems or bugs found on the website, We promise
+                      that we will address all the issues as soon as possible, We are open to all sources of help.</li>
+                    <li style="margin: 15px 0px;">Contact Information: &nbsp;&nbsp;&nbsp;<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Facebook_icon_2013.svg/640px-Facebook_icon_2013.svg.png"  
+                        alt="facebook" style="height: 25px;"><a href="#" style="text-decoration: none;color: rgb(240, 236, 229);">&nbsp;&nbsp; Facebook</a> &nbsp;&nbsp;| 
+                        &nbsp;&nbsp;<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png"  
+                        alt="facebook" style="height: 25px;"><a href="#" style="text-decoration: none;color: rgb(240, 236, 229);">&nbsp;&nbsp; Instagram</a> &nbsp;&nbsp;| 
+                        &nbsp;&nbsp;<img src="https://pngset.com/images/whatsapp-logo-hd-whatsapp-background-symbol-text-clothing-apparel-transparent-png-671626.png"  
+                        alt="facebook" style="height: 25px;">&nbsp;&nbsp;+970-599-999888</li>
+                    <li>Finally, We would like to express our deep gratitude and appreciation for the amazing staff of Axsos Academy
+                      for all the hard work and dedication invested in making us self sufficient Web-Developers, Thank you very much.</li>
+            </ul>
+        </section>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="{% static 'JS/jquery.flipster.min.js' %}"></script>
+      <script>
+        $('.carousel').flipster({
+          style:'carousel',
+          spacing:-0.3,
+        });
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="{% static 'JS/javas.js' %}"></script>
+</body>
+</html>

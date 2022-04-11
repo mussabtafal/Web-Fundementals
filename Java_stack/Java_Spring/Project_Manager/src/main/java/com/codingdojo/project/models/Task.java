@@ -27,7 +27,7 @@ public class Task {
 	
 	@NotEmpty(message="Task is required!")
     @Size(min=3, max=70, message="Title must be between 3 and 70 characters")
-    private String task;
+    private String description;
 	
 	@Column(updatable=false)
     @DateTimeFormat(pattern="yyyy-MM-dd")
@@ -55,8 +55,8 @@ public class Task {
 	public Task() {
 	}
 	
-	public Task(String task) {
-		this.task = task;
+	public Task(String description) {
+		this.description = description;
 	}
 	public Long getId() {
 		return id;
@@ -64,11 +64,12 @@ public class Task {
 	public void setId(Long id) {
 		this.id = id;
 	}
-	public String getTask() {
-		return task;
+
+	public String getDescription() {
+		return description;
 	}
-	public void setTask(String task) {
-		this.task = task;
+	public void setDescription(String description) {
+		this.description = description;
 	}
 	public Date getCreatedAt() {
 		return createdAt;

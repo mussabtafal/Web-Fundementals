@@ -39,7 +39,6 @@ public class Project {
     @Size(min=3, max=200, message="Username must be between 3 and 200 characters")
     private String description;
 	
-	@NotEmpty(message="Date is required!")
     @DateTimeFormat(pattern="yyyy-MM-dd")
     private Date dueDate;
 	
