@@ -1,0 +1,17 @@
+https://pokeapi.co/api/v2/pokemon/bulbasaur/
+
+================================================
+
+https://pokeapi.co/api/v2/pokemon/moltres/
+
+================================================
+
+https://pokeapi.co/api/v2/pokemon/celebi/
+
+================================================
+
+https://pokeapi.co/api/v2/pokemon/807/
+
+================================================
+
+https://pokeapi.co/api/v2/pokemon/501/
