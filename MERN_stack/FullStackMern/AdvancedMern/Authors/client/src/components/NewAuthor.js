@@ -13,7 +13,7 @@ const NewAuthor = () => {
         axios
             .post("http://localhost:8000/api/authors", author)
             .then((res) => {
-                console.log("Response, ", res);
+                console.log("Response", res);
                 navigate("/");
             })
             .catch(err => {

@@ -27,12 +27,7 @@ const AuthorUpdate = (props) => {
 
     return (
         <div>
-            {loaded && (
-                <AuthorForm
-                    onSubmitProp={updateAuthor}
-                    initialName={author.name}
-                />
-            )}
+            {loaded && (<AuthorForm onSubmitProp={updateAuthor} initialName={author.name}/>)}
             <DeleteButton authorId={author._id} successCallBack={() => navigate("/")} />
         </div>
     )
